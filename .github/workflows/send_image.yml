@@ -3,7 +3,7 @@ name: Send Daily Image
 on:
     schedule:
       # 每天 8:00 触发（UTC 时间，对应北京时间 16:00，需调整）
-      - cron: '0 0/1 * * *' 
+      - cron: '*/5 * * * *' 
     workflow_dispatch:     # 支持手动触发
 jobs:
     send-image:
