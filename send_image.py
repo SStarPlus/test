@@ -47,7 +47,7 @@ response = requests.post(webhook_url, data=json.dumps(msg), headers={'Content-Ty
 new_index = current_index + 1
 with open('current_index.txt', 'w') as f:
     f.write(str(new_index))
-    
+
 print(response.json())
 
 print(response.status_code)
